@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 18
+    compileSdkVersion 22
     buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.droid.bootcamp"
-        targetSdkVersion 18
+        targetSdkVersion 22
         minSdkVersion 14
     }
 

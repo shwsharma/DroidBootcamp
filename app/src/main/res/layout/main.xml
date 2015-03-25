@@ -3,22 +3,29 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:gravity="center_horizontal"
         >
-    <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/first_operand" android:hint="enter the operand"/>
-    <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="+"
-            android:onClick="add"
-            android:id="@+id/add_button" />
-    <TextView
-            android:layout_width="fill_parent"
-            android:background="#8888ff"
-            android:layout_height="61dp"
-            android:id="@+id/result"
-            android:layout_gravity="center_vertical"/>
+  <EditText
+      android:id="@+id/number_input_one"
+      android:text="0"
+      android:gravity="center_horizontal"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:inputType="number"/>
+
+  <TextView
+      android:id="@+id/result"
+      android:text="Result"
+      android:gravity="center_horizontal"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"/>
+
+  <Button
+      android:layout_width="200dp"
+      android:layout_height="50dp"
+      android:layout_marginTop="20dp"
+      android:text="@string/add"
+      android:onClick="add"/>
 </LinearLayout>
 
